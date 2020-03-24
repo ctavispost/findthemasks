@@ -141,6 +141,12 @@
             #map .value {
                 font-weight: 400
             }
+
+            .foot-Background {
+              margin: 0 20px;
+              background-color: hsla(0 , 0%, 100%, .95);
+              border-top: 1px solid hsla(0, 0%, 0%, .2);
+            }
     </style>
 </head>
 
@@ -172,7 +178,7 @@
 
         <h3 style="padding-bottom: 30px">We need to find the masks.</h3>
 
-        <div class="container">
+        <div class="container" id="what">
             <div class="row">
                 <div class="col-md-6">
                     <p>Look in your basement, your emergency kit, your bug out bag, your workbench for <span class="embold">N95 masks</span>. They look like this:</p>
@@ -194,7 +200,7 @@
             </div>
         </div>
         <a name="sites"></a>
-        <h2 style="padding: 20px 0px;">How to donate</h2>
+        <h2 style="padding: 20px 0px;" id="how">How to donate</h2>
         <ol>
             <li> Look at our list of sites below. You can filter by state or supplies needed.
             <li> If there's a site near you, drop off following their instructions.
@@ -203,7 +209,7 @@
         </ol>
         <p><h4>To add a donation site, update information, or request we take down information, please <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgCpK5coPVFC6rJrE7ZhimiZuDoEaL6fo6gYqxsN_FIpJZhg/viewform">fill in this form</a>.</h4></p>
 
-        <h2 style="padding: 20px 0px;">Map of donation sites</h2>
+        <h2 style="padding: 20px 0px;" id="where">Map of donation sites</h2>
         <div id="map"></div>
 
         <h2 style="padding: 30px 0px 20px 0px;">List of donation sites</h2>
@@ -215,7 +221,20 @@
         Got a comment or suggestion not related to data updates? Want to help? contact@findthemasks.com or join us on <a href="https://github.com/r-pop/findthemasks">our Github</a>.</p>
         <p class="centerText">made with <3 in Seattle</p>
         <a href="whoweare.html" class="end">who we are</a>
-    </div>
-</main>
-</body>
+
+        <div class="container">
+          <footer class="footer mt-auto py-3">
+            <nav class="navbar fixed-bottom foot-Background">
+              <ul class="navbar-nav mr-auto flex-row">
+                <li class="col nav-link">Donations:</li>
+                <li class="nav-item active col-2"><a href="index.html#how" class="nav-link">how</a></li>
+                <li class="nav-item active col-2"><a href="index.html#what" class="nav-link">what</a></li>
+                <li class="nav-item active col-2"><a href="index.html#where" class="nav-link">where</a></li>
+                <li class="nav-item active col-4"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfgCpK5coPVFC6rJrE7ZhimiZuDoEaL6fo6gYqxsN_FIpJZhg/viewform" class="nav-link">add a site</a></li>
+              </ul>
+            </nav>
+          </footer>
+        </div>
+      </main>
+    </body>
 </html>
