@@ -143,9 +143,19 @@
             }
 
             .foot-Background {
-              margin: 0 20px;
+              margin: 0 15px;
               background-color: hsla(0 , 0%, 100%, .95);
               border-top: 1px solid hsla(0, 0%, 0%, .2);
+            }
+
+            .display-iff-wide {
+              display: none;
+            }
+
+            @media screen and (min-width: 370px) {
+              .display-iff-wide {
+                display: block;
+              }
             }
     </style>
 </head>
@@ -156,7 +166,7 @@
 
     <div class="container" style="padding-bottom: 40px;">
         <h1 style="padding: 20px 0px 10px 0px;">#findthemasks</h1>
-        <p>Jump to: <a href="#sites">donate/add a site</a></p>
+        
         <h5 style="padding-bottom: 20px;">America&rsquo;s frontline healthcare workers are treating COVID19 patients without adequate protective gear, risking their lives! They have taken to Twitter on <a href="https://twitter.com/search?q=%23GetMePPE&src=typeahead_click">#GetMePPE</a> to ask for help:</h5>
 
 
@@ -222,19 +232,16 @@
         <p class="centerText">made with <3 in Seattle</p>
         <a href="whoweare.html" class="end">who we are</a>
 
-        <div class="container">
-          <footer class="footer mt-auto py-3">
-            <nav class="navbar fixed-bottom foot-Background">
-              <ul class="navbar-nav mr-auto flex-row">
-                <li class="col nav-link">Donations:</li>
-                <li class="nav-item active col-2"><a href="index.html#how" class="nav-link">how</a></li>
-                <li class="nav-item active col-2"><a href="index.html#what" class="nav-link">what</a></li>
-                <li class="nav-item active col-2"><a href="index.html#where" class="nav-link">where</a></li>
-                <li class="nav-item active col-4"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfgCpK5coPVFC6rJrE7ZhimiZuDoEaL6fo6gYqxsN_FIpJZhg/viewform" class="nav-link">add a site</a></li>
-              </ul>
-            </nav>
-          </footer>
-        </div>
+        <nav class="navbar fixed-bottom foot-Background foot-ul">
+          <ul class="navbar-nav mt-auto flex-row">
+            <li class="nav-link col" style="margin-left: 0">Donate:</li>
+            <li class="nav-item active col display-iff-wide"><a href="index.html#how" class="nav-link">how</a></li>
+            <li class="nav-item active col"><a href="index.html#what" class="nav-link">what</a></li>
+            <li class="nav-item active col"><a href="index.html#where" class="nav-link">where</a></li>
+            <li class="nav-item active col-4"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfgCpK5coPVFC6rJrE7ZhimiZuDoEaL6fo6gYqxsN_FIpJZhg/viewform" class="nav-link">add site</a></li>
+          </ul>
+        </nav>
+
       </main>
     </body>
 </html>
